@@ -1,0 +1,9 @@
+class calc{
+    var len = Number(prompt(" what is the length"));
+    var wid = Number(prompt(" what is the width"));
+    var a = len * wid 
+    var prim = 2* len + 2* wid
+    return(len)
+    return(wid)
+    return("the area is" + a)
+    return("the perimiter is " + perim)
