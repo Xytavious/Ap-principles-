@@ -26,3 +26,9 @@ int main(){
    return 0;
 
 }
+/*\
+Enter Length:24
+Enter Width:15
+The area is: 360
+The perimiter is: 78
+*/
