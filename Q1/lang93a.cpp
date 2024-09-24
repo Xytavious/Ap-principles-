@@ -13,5 +13,5 @@ int main()
     std::cout << "Enter Kilowatts Used: ";
     std::cin >> userIN;
 
-    std::cou t << endl << endl << "your nuum is: " <<  userIN << endl;
+    std::cout  << endl << endl << "your nuum is: " <<  userIN << endl;
 }
