@@ -50,3 +50,15 @@ int main()
 
 
 }
+/*
+Enter Nuber1: 15
+enter Number2:58
+Original Numbers are: 15 and 58
+Sum =    73
+Difference =   -43
+Product =   870
+Average =   29
+Absolute value =   43
+Maximum =   58
+Minimum =   58
+*/
