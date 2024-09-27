@@ -3,20 +3,31 @@ using namespace std;
 #include <cmath>
 int main()
 {
-    int n1;
-    int n2;
-    int n3;
-    int n4;
-    int hours = 0;
+    int t1;
+    int t2;
+    int hours ;
+    int min;
 
-    std::cout << "enter number 1";
-    std::cin >> n1;
+    std::cout << "enter the First time ";
+    std::cin >> t1;
 
-    std::cout << "Enter num2";
-    std::cin >> n2;
+    std::cout << "Enter the seconed time ";
+    std::cin >> t2;
 
-    for 
-   
+    int dif = t2 -t1;
+
+    dif /12;
+    if (dif < 0) {
+        hours += 24 - (ceil(t1/100))
+        hours += t2/100
+        if (dif%100 != 0) {
+            minutes = dif%100
+        }
+    }
+   //  hours1 = t1 /100 and hoursr2 = t2 / 100; difhours = hours 1 - hours2 
+   // difmin = 
+   //note you have to take hours - tot #t1 
+   // notes are way closer 
 
 
 
