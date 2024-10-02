@@ -15,6 +15,33 @@ int main()
     std::cout<<"Enter the number of copies to be printed: ";
     std::cin>>numC;
 
+    if (numC >0 && numC < 99)
+    {
+        per = 0.30;
+        
+    }
+    else if (numC >= 100 && numC < 499)
+    {
+        per = 0.28;
+        
+    }
+    else if (numC >=500 && numC < 749)
+    {
+        per = 0.27;
+        
+    }
+    else if (numC >= 750 && numC < 1000)
+    {
+        per = 0.26;
+        
+    }
+    else if (numC > 1000)
+    {
+        per = 0.25;
+        
+    }
+    
+
     tot = numC*per;
 
     std::cout<<"Price per is " << per <<endl;
