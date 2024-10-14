@@ -15,26 +15,5 @@ int main()
     std::cout<<"enter number of eggsa: ";
     std::cin >> eggs;
 
-    if (eggs > 0 && eggs <4)
-    {
-        per = eggs * 0.50;
-        std::cout << "number of eggs " << eggs <<endl <<"the bill is " << per;
-
-    }
-    else if (eggs >= 4 && eggs < 6)
-    {
-        per = eggs * 0.45;
-        std::cout << "number of eggs " << eggs <<endl <<"the bill " << per;
-    }
-    else if (eggs >= 6 && eggs <  11)
-    {
-        per = eggs * 0.40;
-        std::cout << "number of eggs " << eggs <<endl <<"the bill " << per;
-    }
-    else if (eggs > 11)
-    {
-        per = eggs * 0.35;
-        std::cout << "number of eggs " << eggs <<endl <<"the bill " << per;
-
-    }
+    Number of eggs Perched:
 }

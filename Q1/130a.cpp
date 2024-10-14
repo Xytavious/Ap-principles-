@@ -23,8 +23,14 @@ int st()
 }
 int main()
 {
+
+    
+
+
+
+
    
-    while (true && ){
+    while (true ){
 
     int num1; 
     std::cout << "Enter Number ";
