@@ -8,13 +8,12 @@ using namespace std;
 // std::cin >> num1; means read the previous prompt 
 int main()
 {
-//for (int i = 0; i<=36; i++,i++){
-  //  std::cout<<i <<"  ";
+ int i = 2;
+while (i <= 18) {
+  cout << i << endl;
+  i++;
+  i++;
 
-  int i = 0;
-while (i <= 36) {
-  cout << i << "   ";
-  i++;
-  i++;
 }
 }
+
