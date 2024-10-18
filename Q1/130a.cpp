@@ -30,7 +30,7 @@ int main()
 
 
    
-    while (true ){
+    
 
     int num1; 
     std::cout << "Enter Number ";
@@ -58,4 +58,4 @@ int main()
     }
 
 
-}
+
