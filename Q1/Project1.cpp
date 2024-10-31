@@ -1,24 +1,24 @@
 #include <iostream>
-#include <vector>
+#include <vector>    //imports needed for the progam to work and makes life easir
 #include <string>
 
-using namespace std;
+using namespace std;   // makes it so i dont have to use "std::"
 
 class Contact{
     private:
-    string name;
+    string name;  // declaring varibles 
     string email;
     string phone;
     public:
-    Contact (string n,string e,string p){
+    Contact (string n,string e,string p){  // this will be used for later as to strore info Maybe
     name = n; 
     email=e;
     phone=p;
     }
     void print(){
-        cout<<name<<endl;
-        cout<<email<<endl;
-        cout<<phone<<endl;
+        cout<<"Name: "<<name<<endl;      // used insted of get name getemail and get phone
+        cout<<"Email: "<<email<<endl;
+        cout<<"Phone: "<<phone<<endl;
     }
     
 
@@ -29,38 +29,50 @@ use vector it not an array
  */ 
 
 
-
+void showContacts(vector<Contact>contacts){
+    int count=1;
+    for(Contact p: contacts){ 
+        cout<<count<<" ";
+        count++;
+        p.print();
+    }
+}
 int main()
 {
-    vector<Contact>contacts;
+    vector<Contact>contacts; // this is lists in other languages and is simmular to arrays
     while (true){
-        int choice = 0;
-        cout<<"enter an Option: 1. enter contact 2. delete contact  3. veiw list 4. exit"<<endl;
-        cin>>choice;
+        int choice = 0;  // a varible that is later used for an if staytment
+        cout<<"enter an Option: 1. enter contact 2. delete contact  3. veiw list 4. exit"<<endl; // this is the user menue 
+        cin>>choice;   //takes input from the menue and asign
         if (choice ==1){
             string name; 
-            string email;
+            string email;       // just varibles
             string phone;
             cout<<"enter name "<<endl;
             cin >> name;
-            cout<< "enter email"<<endl;
+            cout<< "enter email"<<endl;    //user input 
             cin>> email;
             cout <<"Enter Phone " <<endl;
             cin>>phone;
 
-            Contact person =  Contact(name, email, phone);
-            contacts.push_back(person);
+            Contact person =  Contact(name, email, phone);   // creates an varible that is used to put info in the class created later
+            contacts.push_back(person);  // simmular to apend Maybe??
 
         }
         else if (choice ==2){
             // remove person by index   use contact vector 
-
+            int index;
+            showContacts(contacts); // displays the contents of the vector
+            cout<<"Enter number contact remove: ";  //promts the user for a number wich is the index of the of the vector
+            cin>>index;
+            contacts.erase(contacts.begin()+index-1); // goes to the contact vector (.erase) is how to remove it from the vector
         }
         else if (choice ==3){
             /* print out contacts 
             use the contact vector
             */
-           cout<<
+           showContacts(contacts); // this insainly helpful code is used to show the information stored in the contacts vector
+
 
         }
         else{

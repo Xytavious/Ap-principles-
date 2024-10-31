@@ -68,6 +68,8 @@ multiple lines
 ```
 
 ## Decision Structures
+*  if Statements 
+*  switch Statement
 
 ## Conditional Operators
 
