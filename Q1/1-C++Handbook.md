@@ -68,12 +68,64 @@ multiple lines
 ```
 
 ## Decision Structures
-*  if Statements 
-*  switch Statement
+*  If Statements: switches  
+``` C++
+if(condition) {
+   var = X;
+   do something;
+} 
+```
+*  else statements
+``` C++
+else {
+   var = Y;
+}
+```
+*  Switch Statement: allows any value to change the control of the execution
+```C++
+int water = 3;
+switch (water) {
+  case 1:
+    cout << "dasani ";
+    break;
+  case 2:
+    cout << "FIJI";
+    break;
+  case 3:
+    cout << "Wednesday";
+     break;
+}
+```
+*  Ternary: evaluates the condition and executes an expression out of two based on the result of the condition.
+
+```C++
+int main() {
+  double marks;
+
+  // take input from users
+  cout << "Enter your marks: ";
+  cin >> marks;
+
+  // ternary operator checks if
+  // marks is greater than 40
+  string result = (marks >= 40) ? "passed" : "failed";
+
+  cout << "You " << result << " the exam.";
+```
 
 ## Conditional Operators
+* '<=' Checks if a varible is less then or equal to a specified value
+
+*  '>=' Checks if a varible is greater then or equal to a specified value
+
+* ==: Checks if a varible is equal to a specified value
+
+* != Checks if a varible is not equal to a specified value
 
 ## Logic Operators
+* &&: and
+* ||: or 
+* !: not
 
 ## Advanced Decision Structures
 
