@@ -127,19 +127,65 @@ int main() {
 * ||: or 
 * !: not
 
-## Advanced Decision Structures
-
 ## String Methods
+* length()/size(): will return the length of the string.
+```C++
+std::string text = "Hello profesor ";
+int length = text.length();
+```
+* index: Gets individual characters using an array
+* at(): is used to access a character at a specified index.
+* append(): The append() function adds one string to the end of another.
+* 
 
 ## Random Generation
+rand();
 
 ## Looping Structures
+* while loop: checks the condition(<,=,>), then does the the code inside umtil the conditions are met.
+```C++
+int i = 1;
+
+while (i <= 5) 
+{
+  cout << "Hello World"<<endl;
+  i++;
+}
+
+```
+* for loop
+```C++
+for(int i = 0; i < n; i++)
+{
+  // BODY
+}
+
+```
+* do-while loop
+```C++
+int i = 2;
+do {
+  // loop body
+  cout << "Hello World\n";
+  // update expression
+  i++;
+  } while (i < 1);
+```
 
 ## Functions/Methods
+ Functions are blocks of code that perform tasks and can be reused throughout a program. 
+ They help in from having to repate code.
+
+ Methods are functions that belong to a class. 
+ They are used to define the behavior of objects created from the class.
 
 ### Arrays/Lists
+ Arrays are a data structure that are used to store multiple values of similar data types.
 
 ### Matrices
+
+
+ [Geeks For Geeks](https://www.geeksforgeeks.org/)
 
 # aboudt 
 
@@ -156,7 +202,6 @@ bullet list:
 1. wefa
 2. argeg
 
-heres a [link](https....)
 
 |------|
 
