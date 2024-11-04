@@ -22,10 +22,10 @@ std::cout << "Hello, world!" << std::endl;
 ```
 
 ## Data Types
-* int (integer) - a whole number, positive or negative (32 bits)
-* double (double-precision floating-point) - a number with a decimal (64 bits with 15 bits of precision)
-* char (character) - a single keyboard (ASCII) character (1 byte)
-* boolean - either true or false
+* int (integer) - A whole number, positive or negative (32 bits)
+* double (double-precision floating-point) - A number with a decimal (64 bits with 15 bits of precision)
+* char (character) - A single keyboard (ASCII) character (1 byte)
+* boolean - Either true or false
 
 ## Console Input/Output
 * count << (insertion aperatior)
@@ -60,18 +60,19 @@ means read the previous prompt
 * --	Decreases the value of a variable by 1	x--
 
 ## Assignment Operations 
-* = this is used to set a value to a varible 
-* += this adds what ever value you put after it 
-* -=
+* = This is used to set a value to a varible 
+* += This adds what ever value you put after it 
+* -= This subtracts what ever value you put after it
 ## Comments
+Comments are used to make a note of code that needs to be done.    
+Comments can also be used as an explnation of the specific function the code. 
 
+Example:
 ```C++
-// Simple Commet
+// Todo
+//make a varible
 
-/* block
-comment
-across
-multiple lines
+/* set the varible to an interger then cange it to a double 
 */
 
 /* this
@@ -84,21 +85,26 @@ multiple lines
 ```
 
 ## Decision Structures
-*  If Statements: 
+*  If Statements: Allows you to make a decision based on the given condition.
   
+Example:
 ``` C++
 if(condition) {
-   var = X;
-   do something;
+  var = X;
+  do something;
 } 
 ```
-*  else statements
+*  Else statements: This is used when the first condition in the if Statement is not met or needs a variation.
+
+Example:
 ``` C++
 else {
-   var = Y;
+  var = Y;
 }
 ```
-*  Switch Statement: allows any value to change the control of the execution
+*  Switch Statement: Allows any value to change the control of the execution
+
+Example:
 ```C++
 int water = 3;
 switch (water) {
@@ -115,6 +121,7 @@ switch (water) {
 ```
 *  Ternary: evaluates the condition and executes an expression out of two based on the result of the condition.
 
+Example:
 ```C++
 int main() {
   double marks;
@@ -146,6 +153,8 @@ int main() {
 
 ## String Methods
 * length()/size(): will return the length of the string.
+
+Example:
 ```C++
 std::string text = "Hello profesor ";
 int length = text.length();
@@ -160,6 +169,8 @@ rand();
 
 ## Looping Structures
 * while loop: checks the condition(<,=,>), then does the the code inside umtil the conditions are met.
+
+Example:
 ```C++
 int i = 1;
 
@@ -172,6 +183,7 @@ while (i <= 5)
 ```
 * for loop: A repetition control structure that allows you to write a loop that is executed a specific number of times
 
+Example:
 ```C++
 for(int i = 0; i < n; i++)
 {
@@ -181,6 +193,7 @@ for(int i = 0; i < n; i++)
 ```
 * do-while loop: this just means that the condition is tested at the end of the loop body.
 
+Example:
 ```C++
 int i = 2;
 do {
