@@ -6,13 +6,20 @@ using namespace std; this removes the reqirement for using std::..
 
 #include <"cmath">
 
-count << (insertion aperatior)
-cin >> (extravtion operatior)
-<< endl: means the same as ln. (Enter)
-
-## Comments
 
 ## Compiling and Running
+Create a file with (.cpp) at the end of the file name. using a text editor or an IDE.
+
+Example:
+```C++
+#include <iostream>
+
+int main() {
+std::cout << "Hello, world!" << std::endl;
+ return 0;
+}
+
+```
 
 ## Data Types
 * int (integer) - a whole number, positive or negative (32 bits)
@@ -21,8 +28,17 @@ cin >> (extravtion operatior)
 * boolean - either true or false
 
 ## Console Input/Output
+* count << (insertion aperatior)
 
+Cout: tell the computer display a message or prompt that he user can respond to.
 
+* cin >> (extravtion operatior)
+
+Cin: tells the computer to take in the users input and assign it to a varible.
+
+* << endl: means the same as ln. (Enter)
+
+Example:
 ```C++ 
 std::cout << "Enter num1 "; /*
 (this promts the user for Input)
@@ -30,9 +46,9 @@ std::cout << "Enter num1 "; /*
 std::cin >> num1;  /*
 means read the previous prompt 
 ```
- Cout tell the computer the take in user input .
+ 
 
- while Cin tells the user to take in the user input.
+ 
 
 ## Arithmetic Operations
 * '+'	Addition  Adds together two values	x + y	
@@ -68,7 +84,8 @@ multiple lines
 ```
 
 ## Decision Structures
-*  If Statements: switches  
+*  If Statements: 
+  
 ``` C++
 if(condition) {
    var = X;
@@ -102,7 +119,7 @@ switch (water) {
 int main() {
   double marks;
 
-  // take input from users
+  // take input from user
   cout << "Enter your marks: ";
   cin >> marks;
 
@@ -153,7 +170,8 @@ while (i <= 5)
 }
 
 ```
-* for loop
+* for loop: A repetition control structure that allows you to write a loop that is executed a specific number of times
+
 ```C++
 for(int i = 0; i < n; i++)
 {
@@ -161,7 +179,8 @@ for(int i = 0; i < n; i++)
 }
 
 ```
-* do-while loop
+* do-while loop: this just means that the condition is tested at the end of the loop body.
+
 ```C++
 int i = 2;
 do {
@@ -182,30 +201,8 @@ do {
 ### Arrays/Lists
  Arrays are a data structure that are used to store multiple values of similar data types.
 
-### Matrices
 
+### Resources
+ * [Geeks For Geeks](https://www.geeksforgeeks.org/)
 
- [Geeks For Geeks](https://www.geeksforgeeks.org/)
-
-# aboudt 
-
-## formating 
-
-**Bold** 
-*int* 
-
-***italic***
-
-bullet list:
-* wwew
-
-1. wefa
-2. argeg
-
-
-|------|
-
-
-```C++
-
-```
+* [Stack Overflow](https://stackoverflow.com/)
