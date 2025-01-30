@@ -38,17 +38,16 @@ class TestCalc(unittest.TestCase):
     def test_div_error_case(self):
         self.assertEqual(Calc.div(1, -1), -1)
 
-    #weeee
+     #weeee
 
     def test_sub_normal_case(self):
-        self.assertEqual(Calc.sub(2, 1), 1)
+        self.assertEqual(Calc.sub(1, 2), -1)
 
     def test_sub_edge_case(self):
-        with self.assertRaises((0, 0), 0):
-            Calc.sub(0, 0)
+        self.assertEqual(Calc.sub(0, 0), 0)
 
     def test_sub_error_case(self):
-        self.assertEqual(Calc.sub(1, -1), -1)
+        self.assertEqual(Calc.sub(1, -1), 2)
 
     #yyyyy
 
@@ -59,20 +58,20 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(Calc.mul(0, 0), 0)
 
     def test_mul_error_case(self):
-        self.assertEqual(Calc.mul(1, -1), 0)
+        self.assertEqual(Calc.mul(1, -1), -1)
 
 
     #MMMMMMMM
 
     def test_mod_normal_case(self):
-        self.assertEqual(Calc.mod(5, 2), 1)
+        self.assertEqual(Calc.mod(1, 2), 1)
 
     def test_mod_edge_case(self):
         with self.assertRaises(ZeroDivisionError):
             Calc.mod(0, 0)
 
     def test_mod_error_case(self):
-        self.assertEqual(Calc.mod(1, -1), -1)
+        self.assertEqual(Calc.mod(1, -1), 0)
 
 
 if __name__ == '__main__':
