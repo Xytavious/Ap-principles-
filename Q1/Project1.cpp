@@ -42,17 +42,17 @@ int main()
     vector<Contact>contacts; // this is lists in other languages and is simmular to arrays
     while (true){
         int choice = 0;  // a varible that is later used for an if staytment
-        cout<<"enter an Option: 1. enter contact 2. delete contact  3. veiw list 4. exit"<<endl; // this is the user menue 
+        cout<<"Enter Option: 1. Create New Contact  2. Delete Contact  3. Veiw Contact List 4.Exit"<<endl; // this is the user menue 
         cin>>choice;   //takes input from the menue and asign
         if (choice ==1){
             string name; 
             string email;       // just varibles
             string phone;
-            cout<<"enter name "<<endl;
+            cout<<"Enter Name: "<<endl;
             cin >> name;
-            cout<< "enter email"<<endl;    //user input 
+            cout<< "Enter Email: "<<endl;    //user input 
             cin>> email;
-            cout <<"Enter Phone " <<endl;
+            cout <<"Enter Phone: " <<endl;
             cin>>phone;
 
             Contact person =  Contact(name, email, phone);   // creates an varible that is used to put info in the class created later
