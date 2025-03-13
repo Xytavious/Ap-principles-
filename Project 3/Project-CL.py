@@ -14,20 +14,35 @@ import random
 # Trivia questions and answers 
 #lines = f.readlines
 #get random qestoin from the data file 
-with open("Triv.dat", 'r') as f: 
-    lines =f.readlines
 
+wow = 0 # attempt to make a loop that stops when player wants to stop playing
+while True:
+    with open("Triv.dat", 'r') as f: 
+        lines =f.readlines()
 
-qa = []
+    score = 0
+    qa = []
 
-for i in range(0, len(lines), 2):
-    question = lines[i].strip()
-    answer = lines[i + 1].strip()
-    qa.append((question, answer))
-    
-for lcv
-selc_qa = random.choice(qa)
-print("Question:", selc_qa[0])
-print("Answer:", selc_qa[1])
-#random.randint(0-len(lines))
-#use 'pop'
+    for i in range(0, len(lines), 2): # link the answe and gestions together
+        question = lines[i].strip()
+        answer = lines[i + 1].strip()
+        qa.append((question, answer))
+        
+
+    selc_qa = random.choice(qa)
+
+    print("Question:", selc_qa[0])
+    user_answer = input("Enter Answer: ")
+    if user_answer.strip().lower() == selc_qa[1].strip().lower():
+        print("Correct ;)")
+        score +=1
+    else:
+        print("Worng!! >:(")
+    print("Answer:", selc_qa[1])
+        #random.randint(0-len(lines))
+        #use 'pop'
+    ag = input("play agin? 1.YES  2.NO :( ").strip().lower() #dose not work as intended
+    if ag== "no":
+        quit
+    #make the score variale 
+    # need to loop through the whole process again /
