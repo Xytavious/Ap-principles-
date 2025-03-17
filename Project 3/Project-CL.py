@@ -16,11 +16,13 @@ import random
 #get random qestoin from the data file 
 
 wow = 0 # attempt to make a loop that stops when player wants to stop playing
+score = 0
 while True:
+    
     with open("Triv.dat", 'r') as f: 
         lines =f.readlines()
 
-    score = 0
+    
     qa = []
 
     for i in range(0, len(lines), 2): # link the answe and gestions together
@@ -42,7 +44,17 @@ while True:
         #random.randint(0-len(lines))
         #use 'pop'
     ag = input("play agin? 1.YES  2.NO :( ").strip().lower() #dose not work as intended
-    if ag== "no":
-        quit
+    if ag == "no":
+        print("Thanks for playing! Goodbye!")
+        exit()
+    else:
+        print(score)
+       
+
+
+
+
+#dead code
+    
     #make the score variale 
-    # need to loop through the whole process again /
+   # # need to loop through the whole process again /
