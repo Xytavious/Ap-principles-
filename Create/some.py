@@ -6,28 +6,32 @@
 # make options to add data /
 import pandas as pd
 from Sort import mergesort
-ft = pd.DataFrame()
+
 def main():
     
     with open("ad.dat", 'r') as f: 
         lines =f.readlines()
     li =[]
-    for i in range(0, len(lines), 6):  #links house information all together 
-      Adress = lines[i].strip()
-      Street = lines[i+1].strip()
-      PB = lines[i+2].strip()
-      Bath = lines[i+3].strip()
-      sqr = lines[i+4].strip()
-      lot = lines[i+5].strip()
-      li.append((Adress,Street,PB,Bath,sqr,lot)) 
-
-    print(li)
+    for i in range(0, len(lines), 7):  #links house information all together 
+      if i + 6 < len(lines):  #fixes out of bounds
+        Adress = lines[i].strip()
+        Street = lines[i+1].strip()
+        PB = lines[i+2].strip()
+        Bath = lines[i+3].strip()
+        sqr = lines[i+4].strip()
+        lot = lines[i+5].strip()
+        li.append((Adress,Street,PB,Bath,sqr,lot)) 
+        
     x = input("1.) Veiw all Properties  2.) Search based on street 3.) Manage properties ")
     if x ==1:
-        ft['Adress'] = li
-        ft['Street'] = Street
-        ft['Bedrooms']= 0
-        ft['Baths'] = Bath
+        ft = pd.DataFrame()
+        ft['Adress'] = li[0]
+        ft['Street'] = li[1]
+        ft['Price'] = li[2]
+        ft['Bedrooms']= li[3]
+        ft['Baths'] = li[4]
+        ft['Street'] = li[5]
+        ft['Street'] = li[6]
         print(ft)
     elif x ==2:
         c= 0
