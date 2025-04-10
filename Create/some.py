@@ -24,17 +24,18 @@ def main():
         
     x = input("1.) Veiw all Properties  2.) Search based on street 3.) Manage properties ")
     if x ==1:
-        ft = pd.DataFrame()
-        ft['Adress'] = li[0]
-        ft['Street'] = li[1]
-        ft['Price'] = li[2]
-        ft['Bedrooms']= li[3]
-        ft['Baths'] = li[4]
-        ft['Street'] = li[5]
-        ft['Street'] = li[6]
-        print(ft)
+        df = pd.DataFrame()
+        df['Adress'] = li[0]
+        df['Street'] = li[1]
+        df['Price'] = li[2]
+        df['Bedrooms']= li[3]
+        df['Baths'] = li[4]
+        df['Street'] = li[5]
+        df['Street'] = li[6]
+        print(df)
     elif x ==2:
-        c= 0
+        c= mergesort
+        
 
         
     #properties = 0
