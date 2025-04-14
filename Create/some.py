@@ -27,10 +27,14 @@ def main():
     if x == "1":
         
         print("hi")
-        df = pd.DataFrame(li, columns=["Address", "Street", "Price", "Bedrooms", "Bathrooms", "Square Feet", "Lot Size"])
+        pd.set_option('display.max_rows', None)
+        pd.set_option('display.max_columns', None)
+        pd.set_option('display.width', None)
+        
+        df = pd.DataFrame(li, columns=["Address", "Street\t", "Price\t", "Bedrooms\t", "Bathrooms\t", "Square Feet\t", "Lot Size"])
 
         
-        print(df)
+        print(df.to_string(index=False))
         
     elif x =="2":
         c= mergesort
