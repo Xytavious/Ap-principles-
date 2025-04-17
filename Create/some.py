@@ -37,6 +37,12 @@ def main():
         print(df.to_string(index=False))
         
     elif x =="2":
+        user = input("Entered desired number of bedrooms")
+        for i in range(0,len(li),3):
+            if user == li[i]:
+                we = []
+                we.append(li.index(i))
+        print(we)
         c= mergesort
         c(li)
         print(li)
