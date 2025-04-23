@@ -33,19 +33,24 @@ def main():
         
         df = pd.DataFrame(li, columns=["Address", "Street\t", "Price\t", "Bedrooms\t", "Bathrooms\t", "Square Feet\t", "Lot Size"])
 
-        
+    
         print(df.to_string(index=False))
         
     elif x =="2":
-        user = input("Entered desired number of bedrooms")
+        user = int(input("Entered desired Pice. "))
+        
+        
         for i in range(0,len(li),3):
-            if user == li[i]:
-                we = []
-                we.append(li.index(i))
-        print(we)
-        c= mergesort
-        c(li)
-        print(li)
+            print(P)
+            #min_dif = min(abs(li[2]-user == min_dif))
+            #cl= [li for li in li if abs(li[2]-user)]
+            #if user == li[i]:
+            #    we = []
+            #    we.append(li.index(i))
+        #print(we)
+        #c= mergesort
+        #c(li)
+        #print(li)
 
         
     #properties = 0
