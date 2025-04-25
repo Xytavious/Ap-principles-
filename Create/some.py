@@ -45,6 +45,11 @@ def main():
     elif x =="2":
         userMin = int(input("Enter Min Pice. "))
         userMax = int(input("Enter Max Price. "))
+        po.sort()
+        if li[2] ==po:
+           print(li)
+        
+        print(po)
         filtered_df = df[df['Price'] >= userMin]
         filtered_df = df[df['Price'] >= userMax]
         print(df)
@@ -53,6 +58,8 @@ def main():
 
         #wo = pd.DataFrame(po, columns=["Price"])
         
+    elif x =="3":
+        newin = input("Enter")
         for i in range(0,len(li)):  
            pass
             #min_dif = min(abs(li[2]-user == min_dif))
