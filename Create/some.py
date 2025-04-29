@@ -38,13 +38,22 @@ df['SquareFootage'] = pd.to_numeric(df['SquareFootage'])
 df['LotSize'] = pd.to_numeric(df['LotSize'])
 
 # make variable to be able to sort prices with bubble sort
-prices = df['Price'].tolist()  # Convert the Price column to a list
-sorted_prices = bubble(prices)  # Sort the prices using bubble sort
+#prices = df['Price'].tolist()  # Convert the Price column to a list
+#sorted_prices = bubble(prices)  # Sort the prices using bubble sort
 
+#df_sorted = sorted_prices
 #pandas black magic 
-df_sorted = df.sort_values(by='Price').reset_index(drop=True)
+#df_sorted = df.sort_values(by='Price').reset_index(drop=True)
 
-
+def bubble_sort_dataframe(df, column_name):
+    n = len(df)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if df[column_name].iloc[j] > df[column_name].iloc[j + 1]:
+                df.iloc[j], df.iloc[j + 1] = df.iloc[j + 1], df.iloc[j]
+    return df
+#bubble_sort_dataframe(df,'Price')
+#print(df)
 #while loop so user can go through all the options without the program closing 
 while True:
     #menu and options
@@ -54,8 +63,11 @@ while True:
         print(df)
     elif x == 2:
         print("\nProperties sorted by Price:")
-        print(df_sorted)
-        print() #TODO need to print the sorted list
+       
+        bubble_sort_dataframe(df,'Price')
+        print(df)
+                       
+        #print() #TODO need to print the sorted list
     elif x == 3:
         print("Exiting the program.")
         break  
